@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pages</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .content {
+      height: auto;
+      padding: 50px;
+    }
+
+    .title {
+      text-align: left;
+      margin-bottom: 30px;
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .links_wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+
+    .link_layout {
+      width: 100px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .links {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-items: flex-start;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h2 class="title">All Links</h2>
+
+    <div class="links_wrap">
+      <div class="link_layout">Layout 1</div>
+      <div class="links">
+        <a href="/" target="_blank">Homepage</a>
+      </div>
+    </div>
+
+    <div class="links_wrap">
+      <div class="link_layout">Layout 2</div>
+      <div class="links">
+        <a href="work.html" target="_blank">work.html</a>
+        <a href="work-detail.html" target="_blank">work-detail.html</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

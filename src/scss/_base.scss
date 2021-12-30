@@ -1,0 +1,103 @@
+/*------- custom styles -------*/
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--txt11);
+  background: #F6F6F6;
+}
+
+// hide scrollbar
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; // chrome, safari and opera
+}
+
+// hide scrollbar
+body,
+html {
+  -ms-overflow-style: none; // IE and edge
+  scrollbar-width: none; // firefox
+}
+
+
+// image hover effects
+.hover-r {}
+
+
+// headings
+.heading-r {
+  font-size: 2.083vw;
+}
+
+.heading-xl {
+  font-size: 5.521vw;
+}
+
+
+// paragraph styles
+.paragraph-r {
+  font-size: 1.042vw;
+}
+
+
+// button styles
+.btn-r {
+  color: #222;
+  cursor: pointer;
+
+  &:hover {
+    color: #777;
+    cursor: pointer;
+  }
+}
+
+.btn-b {
+  color: #222;
+  cursor: pointer;
+
+  &:hover {
+    color: #777;
+    cursor: pointer;
+  }
+}
+
+
+// link styles
+.link-r {
+  font-size: 1.042vw;
+}
+
+
+// preloader
+.preloader {
+  z-index: 999999999;
+}
+
+
+// custom cursor
+.cursor {
+  opacity: 0;
+  z-index: 9999999;
+}
+
+.cursor__shape {}
+
+.cursor__icon {}
+
+
+// custom cursor sections
+.s-cursor {
+  cursor: none;
+}
+
+
+// main viewport
+.viewport {
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+// responsive
+@media only screen and (max-width: 576px) {}

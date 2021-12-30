@@ -1,0 +1,11 @@
+# Node artifact files
+node_modules/
+
+# assets folder should be ignored in real project but for starter pack it should not
+assets/
+dist/
+.vscode/
+.DS_Store
+.idea/
+# package-lock.json file should not be ignored but for starter pack it should
+package-lock.json

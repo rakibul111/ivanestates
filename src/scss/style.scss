@@ -1,0 +1,20 @@
+@use "fonts";
+@use "variables";
+@use "utils";
+@use "reset";
+@use "animations";
+@use "base";
+
+@use "header";
+@use "footer";
+
+@use "utils/preloader";
+@use "utils/menu";
+@use "utils/subscription";
+@use "utils/primary-slider";
+@use "utils/secondary-slider";
+
+@use "pages/home";
+@use "pages/contact";
+@use "pages/index";
+@use "pages/policy";

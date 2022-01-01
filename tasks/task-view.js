@@ -11,12 +11,12 @@ const sections = {
     "./src/views/footer/foot.html",
     "./src/views/footer/footer.html",
   ],
-  work: [
-    "./src/views/header/head.html", //
+  sold: [
+    "./src/views/header/head.html",
     "./src/views/header/header.html",
-    "./src/views/work.html",
-    "./src/views/footer/foot.html",
+    "./src/views/sold.html",
     "./src/views/footer/footer.html",
+    "./src/views/footer/foot.html",
   ],
   "work-detail": [
     "./src/views/header/head.html", //

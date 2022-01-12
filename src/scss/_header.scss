@@ -1,8 +1,350 @@
 /*------- header section -------*/
-.header {}
+#navbar .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  transform: translateY(0px) scaleY(1);
+  transition: all 0.3s;
+  z-index: 999;
+}
+#navbar .header .container{
+  display: flex;
+  align-items: center;
+}
 
-// main menu
-.main-menu {}
+// header scroll effect
+#navbar .header.scroll{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba($color: #000000, $alpha: 1.0);
+}
+#navbar .header.scroll.scroll_up{
+  transform: translateY(0px) scaleY(1);
+}
+#navbar .header.scroll.scroll_down{
+  transform: translateY(-81px) scaleY(0);
+}
+/* header left*/
+.header .header_left{
+  display: flex;
+  align-items: center;
+}
+/* right navbar ul */
+.header .header_right>ul{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+/* left navbar ul */
+.header_left .nav>ul{
+  display: flex;
+  align-items: center;
+}
+.header .header_left, .header .header_right{
+  flex-basis: 50%;
+}
+#navbar .header .hamburger>div{
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  margin-right: 10px;
+  position: relative;
+  transition: 0.3s all ease;
+}
+#navbar .header .hamburger>div::before, #navbar .header .hamburger>div::after{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s all ease;
+}
+#navbar .header .hamburger>div::before{
+  top: -5px;
+}
+#navbar .header .hamburger>div::after{
+  top: 5px;
+}
+#navbar .header .hamburger{
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  margin-left: 0;
+}
+#navbar .header .hamburger{
+  cursor: pointer;
+  margin-right: 15px;
+}
+// ------------------------------------------------
 
-// responsive
-@media only screen and (max-width: 576px) {}
+// navigation item
+.header .nav_item{
+  padding: 0;
+  margin: 0 15px;
+}
+.header .link{
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #fff;
+  position: relative;
+  display: block;
+  max-width: 180px;
+}
+.header .nav_item .link{
+  line-height: 1;
+}
+
+.header .nav_item.tel_item{
+  margin-right: 0;
+}
+.header .tel_item .tel{
+  padding: 0;
+  line-height: 1.1;
+  position: relative;
+  top: 0;
+}
+.header .tel_item .tel:hover::after {
+  width: 100%;
+}
+.header_logo img{
+  max-width: 200px;
+}
+// --------------------------------------------------------
+.header .link{
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+.header .link:hover{
+  border-bottom: 1px solid #ffffff40;
+}
+.header .link::after{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 0%;
+  background-color: currentColor;
+  transition: all 0.3s;
+}
+// after border of Tel (number)
+.header .tel_item .tel::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  // left: 0;
+  background-color: currentColor;
+  transition: all 0.3s;
+}
+.header .link:hover::after{
+  width: 100%;
+}
+
+/* -----------------side menu------------------- */
+#sidemenu{
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: opacity linear .3s;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -999;
+}
+#sidemenu.visible{
+  z-index: 999;
+  opacity: 1;
+}
+
+#sidemenu .sidemenu_close_btn>span::before, #sidemenu .sidemenu_close_btn>span::after {
+  content: '';
+  display: block;
+  width: 22px;
+  background-color: #fff;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#sidemenu .sidemenu_close_btn>span::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#sidemenu .sidemenu_close_btn>span::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+#sidemenu .sidemenu_close_wrap{
+  display: flex;
+  padding-top: 20px;
+  justify-content: end;
+  position: relative;
+}
+#sidemenu .sidemenu_close_btn{
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s all;
+  padding: 20px 0 20px 20px;
+  z-index: 100;
+}
+#sidemenu .sidemenu_close_btn>span {
+  display: block;
+  position: relative;
+  transition: 0.4s all;
+  width: 20px;
+  height: 20px;
+}
+#sidemenu .sidemenu_close_btn:hover{
+  transform:scale(1.3);
+}
+
+#sidemenu .sidemenu_main {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 66px 56px 92px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: visible;
+}
+// ul li a
+#sidemenu .sidemenu_nav .link{
+  font-size: 26px;
+  line-height: 1.3;
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
+  opacity: 0.8;
+}
+#sidemenu .sidemenu_nav .link::before {
+  content: '';
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  background-color: currentColor;
+  transition: 0.3s;
+}
+#sidemenu ul.sidemenu_nav{
+  padding-left: 48px;
+  display: block;
+  overflow: hidden auto;
+}
+#sidemenu ul.sidemenu_nav li{
+  margin-bottom: 19px;
+  max-width: 330px;
+}
+// custom scrollbar
+#sidemenu ul.sidemenu_nav::-webkit-scrollbar{
+  width:4px;
+  background-color:transparent;
+}
+#sidemenu ul.sidemenu_nav::-webkit-scrollbar-thumb{
+  background-color:#202020;
+}
+#sidemenu ul.sidemenu_nav::-webkit-scrollbar-track{
+  box-shadow:inset 0 0 4px rgba(255,255,255,0.3);
+  background-color:#ffffff;
+}
+//\\custom scrollbar
+
+@media (hover: hover) and (pointer: fine){
+  #sidemenu .sidemenu_nav .link:hover {
+    opacity: 1;
+    text-shadow: 1px 0px 0px currentColor;
+  }
+  #sidemenu .sidemenu_nav .link:hover::before {
+    width: 100%;
+  }
+}
+
+//--------------- mobile contacts ---------------------
+.mobile-contacts {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  overflow: hidden;
+}
+.mobile-contacts__btn {
+  min-width: 90px;
+  margin: 0;
+  padding: 9px;
+  border: 0.5px solid #303339;
+  background: #000;
+  color: #fff;
+  font-size: inherit;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.mobile-contacts--white .mobile-contacts__btn {
+  background-color: #fff;
+  border-color: #eee;
+  color: #000;
+}
+body>div.mobile-contact-wrapper .mobile-contact{
+  display:none;
+  position:fixed;
+  width:100%;
+  height:100vh;
+  z-index:5;
+  pointer-events:none;
+  bottom:0;
+  right:0;
+}
+body>div.mobile-contact-wrapper .mobile-contact .item{
+  outline:none;
+  width:50px;
+  height:50px;
+  box-shadow:4px 4px 10px 0 rgba(0, 0, 0, 0.1);
+  background-color:#f1f1f1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  color:#484b4e;
+  border:none;
+  font-size:20px;
+}
+body>div.mobile-contact-wrapper .mobile-contact .item svg{
+  fill:#484b4e;
+}
+body>div.mobile-contact-wrapper .mobile-contact .item:nth-child(n + 2){
+  margin-top:15px;
+}body>div.mobile-contact-wrapper .mobile-contact .buttons-holder{
+  pointer-events:all;
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  right:25px;
+  bottom:70px;
+}
+body>div.mobile-contact-wrapper .mobile-contact.dark .item{
+  background-color:black;
+  color:#f1f1f1;
+}
+body>div.mobile-contact-wrapper .mobile-contact.dark .item svg{
+  fill:#f1f1f1;
+}

@@ -1,4 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body{
+  font-family: 'CompassSans',serif, Arial, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #000;
+  background-color: #fff;
   overflow-y: visible;
   overflow-x: hidden;
+}
+body.locked{
+  overflow-y: hidden;
+}
+h1,h2,h3,h4,h5,h6,button{
+  font-family:'CompassSerif', serif;
+}
+// customized header font size
+h1{font-size:60px;}
+h2{
+  font-size:30px;
+  line-height: 1.23;
+}
+h3{font-size:30px;}
+h4{font-size:20px;}
+h5{font-size:18px;}
+h6{font-size:17px;}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  font-family: 'CompassSerif', serif, "Times New Roman", Times, serif;
+}
+h6 {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+p {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0; 
+  padding-left: 0; 
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.666rem;
+}
+
+.container{
+  padding: 0 48px;
+  width: 100%;
+  margin: 0 auto;
+}
+ul li{
+  list-style: none;
+}
+// <a>
+
+a, .link{
+  text-decoration: none;
+  color: #303339;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+  page-break-inside: avoid;
+  max-width: 100%;
+}
+section{
+  overflow:hidden;
+  display: block;
+}
+form{
+  margin-bottom: 1.777em;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 20px;
+  border: 1px solid;
+  background: transparent;
+  text-transform: capitalize;
+  line-height: 1;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.4s;
+  cursor: pointer;
+}
+.btn--secondary-dark {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.btn--secondary-dark:hover {
+  color: #000;
+  background: #fff;
+}
+
+.label_group > input{
+  flex-grow: 1;
+  height: 48px;
+  width: inherit;
+  margin: 0;
+  padding: 15px 5px;
+  border: none;
+  background: transparent;
+  color: #000;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.label_group > input::placeholder{
+  color: transparent;
+}
+.form_group .label_group.is-active {
+  border-color: #303339;
+}
+.form_group .label_group.is-active > label {
+  font-size: 10px;
+}
+.form_group .label_group.is-active > input {
+  outline: none;
+}
+.properties .properties_grid a{
+  color: #000;
+}
+li *:last-child {
+  margin-bottom: 0;
 }

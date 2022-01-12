@@ -11,10 +11,17 @@ const sections = {
     "./src/views/footer/foot.html",
     "./src/views/footer/footer.html",
   ],
-  sold: [
+  sold2: [
     "./src/views/header/head.html",
     "./src/views/header/header.html",
-    "./src/views/sold.html",
+    "./src/views/sold2.html",
+    "./src/views/footer/footer.html",
+    "./src/views/footer/foot.html",
+  ],
+  sold3: [
+    "./src/views/header/head.html",
+    "./src/views/header/header.html",
+    "./src/views/sold3.html",
     "./src/views/footer/footer.html",
     "./src/views/footer/foot.html",
   ],

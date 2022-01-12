@@ -1,0 +1,273 @@
+.custom_intro {
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dauwytajz43tx4ylvjwu/modern-exterior-neighborhood);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+.custom_intro > div:first-child {
+  position: relative;
+}
+.custom_intro .custom_intro_wrapper {
+  margin: 0 auto;
+  padding: 0 36px;
+  // max-width: 1000px;
+  min-height: 680px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  top: 0.5px;
+}
+.custom_intro_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.1));
+}
+.custom_intro h1{
+  /* margin-left: 0; */
+  /* margin-right: 0; */
+  margin-top: 0;
+  /* padding-bottom: 0; */
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.666rem;
+  font-weight: normal;
+  line-height: 1.1;
+  z-index: 2;
+}
+.custom_intro_subtitle{
+  z-index: 2;
+  margin-bottom: 36px;
+  position: relative;
+  top: 1.5px;
+}
+.custom_intro .custom_intro_scrolldown {
+  position: relative;
+  top: 1.5px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+// ----------- properties ------------------
+.properties {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+// grid flex
+.properties_grid{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+// grid flex item(wrapper)
+.properties_grid .properties_grid_item_wrap{
+  width: 50%;
+  margin-bottom: 106px;
+  // display: flex;
+}
+// grid flex item(wrapper)
+.col3 .properties_grid_item_wrap{
+  width: 33.3%;
+  margin-bottom: 106px;
+  // display: flex;
+}
+// a
+.properties_grid .properties_grid_item{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.col3 .properties_grid_item{
+  width: 95%;
+}
+.properties_grid .properties_grid_item:hover{
+  .properties_grid_img img {
+    transform: scale(1.05);
+  }
+}
+.properties_grid .properties_grid_img {
+  margin-bottom: 30px;
+  // font-size: 0;
+  height: 422px;
+  background: #eee;
+  overflow: hidden;
+  position: relative;
+}
+.properties_grid .status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+}
+.properties_grid_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s linear;
+}
+.properties_grid .properties_grid_header {
+  display: flex;
+  justify-content: space-between;
+}
+.properties_grid_header h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  max-width: 441px;
+  margin-right: 20px;
+  line-height: 1.3;
+}
+.properties_grid_header .properties_grid_price {
+  font-size: 20px;
+  line-height: 1.3;
+  font-family:'CompassSerif', serif;
+}
+.properties_grid .properties_grid_address {
+  margin-bottom: 10px;
+  line-height: 1.33;
+  text-transform: none;
+  letter-spacing: 1.2;
+  font-size: 18px;
+}
+.properties_grid .properties_grid_details {
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+.properties_grid .properties_grid_footer .link {
+  position: relative;
+  font-size: 14px;
+  margin-right: 15px;
+  transition: background-size 0.3s;
+  color: #303339;
+  background: linear-gradient(currentColor, currentColor) 0 calc(100% + 1px) no-repeat;
+  background-size: 0 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.properties_grid .properties_grid_footer .link:hover {
+  background-size: 100% 1px;
+}
+
+// pagination style
+.pagination-container {
+  position: static;
+}
+.pagination-container .paginationjs {
+  font: inherit;
+  box-sizing: border-box;
+}
+.pagination-container .paginationjs .paginationjs-pages ul {
+  // float: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pagination-container .paginationjs .paginationjs-pages li {
+  // float: none;
+  // border: none;
+  // border-radius: 0;
+  list-style-type: none;
+  margin: 0 2px;
+}
+.pagination-container .paginationjs .paginationjs-pages li.paginationjs-prev a, .pagination-container .paginationjs .paginationjs-pages li.paginationjs-next a {
+  border-color: transparent !important;
+  background-color: transparent !important;
+  font-size: 0;
+  font-weight: bold;
+}
+.pagination-container .paginationjs .paginationjs-pages li.disabled a {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.pagination-container .paginationjs .paginationjs-pages li > a {
+  position: relative;
+  display: block;
+  padding: 5px;
+  border-radius: 0;
+  min-width: auto;
+  height: auto;
+  background: transparent;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 400;
+  color: #757575;
+}
+.pagination-container .paginationjs .paginationjs-pages li.paginationjs-prev a:before {
+  content: "⟵" !important;
+  font-size: 12px;
+}
+.pagination-container .paginationjs .paginationjs-pages li.paginationjs-next a:before {
+  content: "⟶" !important;
+  font-size: 12px;
+}
+.pagination-container .paginationjs .paginationjs-pages li.active a {
+  // height: auto;
+  // line-height: 1;
+  // background: transparent;
+  color: #303339;
+}
+.pagination-container .paginationjs .paginationjs-pages li[data-num="1"] a:before, .pagination-container .paginationjs .paginationjs-pages li[data-num="2"] a:before {
+  content: "0";
+}
+.pagination-container .paginationjs .paginationjs-pages li > a:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+
+// image section
+.image_section .work_with_us{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ebvfwwozoxeu9zyzsnyw/lwhn47olucqmyw90');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.work_with_us h2, .work_with_us .text_content {
+  margin: 0 0 32px;
+  max-width: 540px;
+  color: #ffffff;
+}
+.work_with_us__content{
+  max-width: 424px;
+  text-align: center;
+}
+.image_section .work_with_us {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work_with_us .text_content{
+  white-space: pre-line;
+}

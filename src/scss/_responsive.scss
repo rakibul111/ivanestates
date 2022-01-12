@@ -1,16 +1,258 @@
 /*------- responsive CSS -------*/
-@media screen and (max-width: 576px) {}
+@media(min-width: 1681px) {
+  .container {
+    max-width: 1480px;
+    padding: 0;
+  }
+  #sidemenu .sidemenu_main {
+    padding: 0;
+  }
+  #sidemenu ul.sidemenu_nav{
+    padding-left: 0;
+  }
+}
 
-@media screen and (min-width: 576px) {}
+@media (max-width: 1680px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+@media (max-width: 1300px) {
+  .properties {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 1200px){
+  #navbar .header .nav_hide{
+    display:none;
+  }
+  .col3 .properties_grid_img {
+    margin-bottom: 20px;
+    height: 350px;
+  }
+}
 
-@media screen and (min-width: 768px) {}
+@media (max-width: 1024px) {
+  .col3 .properties_grid_item_wrap{
+    width: 50%;
+  }
+}
 
-@media screen and (min-width: 992px) {}
+@media (max-width: 1023px) {
+  .work_with_us__content{
+    max-width: 100%;
+    // width: 100%;
+  }
+}
 
-@media screen and (min-width: 1024px) {}
+@media(max-width: 992px) {
+  .properties_grid .properties_grid_img {
+    margin-bottom: 20px;
+    height: 350px;
+  }
+  .properties_grid .properties_grid_item_wrap{
+    margin-bottom: 85px;
+  }
+  .properties_grid .properties_grid_header {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .properties_grid .properties_grid_header h3 {
+    max-width: 100%;
+    margin-bottom: 5px;
+    line-height: 1.33;
+    font-size: 24px;
+  }
+  .properties_grid_header .properties_grid_price {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+  .properties_grid .properties_grid_address {
+    max-width: 100%;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .properties_grid .properties_grid_details {
+    margin-bottom: 12px;
+    line-height: 1.64;
+    font-size: 14px;
+  }
+  .properties_grid .properties_grid_footer .link {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+}
+@media(max-width: 960px) {
+  #sidemenu .sidemenu_main{
+    padding-right: 40px;
+  }
+  #sidemenu ul.sidemenu_nav{
+    padding-left: 32px;
+  }
+}
 
-@media screen and (min-width: 1280px) {}
+@media(max-width: 900px) {
+  .properties_grid .properties_grid_item_wrap{
+    width: 100%;
+  }
+  .footer .footer_details {
+    grid-template-columns: 1fr max-content;
+  }
+  .footer .footer_description{
+    margin-top: -27px;
+  }
+}
 
-@media screen and (min-width: 1400px) {}
+@media (min-width: 961px) {
+  .mobile-contacts {
+    display: none;
+  }
+}
 
-@media screen and (min-width: 1600px) {}
+@media (max-width: 960px){
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .properties {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  #sidemenu .sidemenu_nav .link{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .header_logo img{
+    max-width:150px;
+  }
+  .work_with_us__content{
+    padding: 48px 32px;
+  }
+  .footer .footer_bar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .footer_bar .socials .socials_link{
+    margin: 25px 32px 15px 0;
+  }
+  .footer .footer_bar .socials li{
+    padding-right: 10px;
+  }
+  .footer .footer_bar .socials {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:767px){
+  .custom_intro .custom_intro_scrolldown {
+    width: 34px;
+    height: 34px;
+  }
+  .work_with_us h2, .work_with_us .text_content {
+    margin: 0 auto 24px;
+  }
+  .footer .footer_details {
+    grid-template-columns: 1fr;
+  }
+  .footer .footer_details .title{
+    margin-top: 12px;
+  }
+  .footer_details .company p{
+    margin-bottom: 0;
+  }
+  .footer .footer_description{
+    margin-top: 0;
+  }
+  #sidemenu .sidemenu_main{
+    padding-left: 40px;
+  }
+}
+@media (max-width: 650px){
+  .properties_grid .properties_grid_img {
+    height: 225px;
+  }
+  .properties_grid .properties_grid_item{
+    width: 100%;
+  }
+}
+@media (max-width: 580px){
+  .header .tel_item .tel{
+    display:none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .btn {
+    width: auto;
+    padding: 16px 29px;
+  }
+}
+@media (max-width: 560px) {
+  body {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  h1, .custom_intro h1 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .custom_intro .custom_intro_wrapper {
+    padding:0 24px;
+    height:100vh;
+    min-height:inherit;
+  }
+  .custom_intro_subtitle{
+    top: -1px;
+  }
+  .custom_intro .custom_intro_scrolldown {
+    top: -1px;
+  }
+}
+
+@media (max-width: 575.8px){
+  .footer .form_group .label_group > label {
+    display: none;
+  }
+  .label_group > input::placeholder{
+    color: #a9a9a9;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding: 0 24px;
+  }
+  .work_with_us__content{
+    padding: 0 24px;
+  }
+  #sidemenu ul.sidemenu_nav{
+    padding-left: 24px;
+  }
+  #sidemenu .sidemenu_main{
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  body>div.mobile-contact-wrapper .mobile-contact {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .col3 .properties_grid_header h3{
+    font-size: 25px;
+  }
+  .col3 .properties_grid_header .properties_grid_price{
+    font-size: 18px;
+  }
+}

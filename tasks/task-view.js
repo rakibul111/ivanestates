@@ -25,12 +25,12 @@ const sections = {
     "./src/views/footer/footer.html",
     "./src/views/footer/foot.html",
   ],
-  "work-detail": [
+  "ashbourne-circle-san-ramon-ca": [
     "./src/views/header/head.html", //
     "./src/views/header/header.html",
-    "./src/views/work-detail.html",
-    "./src/views/footer/foot.html",
+    "./src/views/ashbourne-circle-san-ramon-ca.html",
     "./src/views/footer/footer.html",
+    "./src/views/footer/foot.html",
   ],
   contact: [
     "./src/views/header/head.html", //
@@ -46,12 +46,12 @@ const sections = {
     "./src/views/footer/foot.html",
     "./src/views/footer/footer.html",
   ],
-  "blog-post": [
+  "compass-concierge": [
     "./src/views/header/head.html", //
     "./src/views/header/header.html",
-    "./src/views/blog-post.html",
-    "./src/views/footer/foot.html",
+    "./src/views/compass-concierge.html",
     "./src/views/footer/footer.html",
+    "./src/views/footer/foot.html",
   ],
 };
 

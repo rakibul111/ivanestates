@@ -12,7 +12,7 @@ let js = [
   "./src/js/button.js",
   "./src/js/menu.js",
   "./src/js/modal.js",
-  "./src/js/slider.js",
+  "./src/js/property-map.js",
 ];
 
 let jsBeautify = (done) => {

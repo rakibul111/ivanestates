@@ -5,6 +5,7 @@ $(function () {
 
   $(window).on('scroll', function () {
     var scrollTop = $(this).scrollTop();
+    console.log(scrollTop)
 
     if(scrollTop > 0){
       $('.header').addClass('scroll');
@@ -18,7 +19,6 @@ $(function () {
         $('.header').addClass('scroll_up');
         $('.header').removeClass('scroll_down');
       }
-      console.log(scrollTop)
       prevScrollTop = scrollTop;
     }
 
@@ -31,9 +31,15 @@ $(function () {
 
   $('.custom_intro_scrolldown').on('click', function (e) {
     e.preventDefault();
-    console.log('scrolldwn')
     $('html, body').animate({
       scrollTop: 680
+    }, 500);
+  });
+
+  $('.property .big_img .scroll').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: window.innerHeight
     }, 500);
   });
 

@@ -1,70 +1,6 @@
-.custom_intro {
-  background-color: #000;
+.sold.custom_intro{
   background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dauwytajz43tx4ylvjwu/modern-exterior-neighborhood);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: #ffffff;
 }
-.custom_intro > div:first-child {
-  position: relative;
-}
-.custom_intro .custom_intro_wrapper {
-  margin: 0 auto;
-  padding: 0 36px;
-  // max-width: 1000px;
-  min-height: 680px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 2;
-  position: relative;
-  top: 0.5px;
-}
-.custom_intro_wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  opacity: 0.8;
-  background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.1));
-}
-.custom_intro h1{
-  /* margin-left: 0; */
-  /* margin-right: 0; */
-  margin-top: 0;
-  /* padding-bottom: 0; */
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.666rem;
-  font-weight: normal;
-  line-height: 1.1;
-  z-index: 2;
-}
-.custom_intro_subtitle{
-  z-index: 2;
-  margin-bottom: 36px;
-  position: relative;
-  top: 1.5px;
-}
-.custom_intro .custom_intro_scrolldown {
-  position: relative;
-  top: 1.5px;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-
 // ----------- properties ------------------
 .properties {
   padding-top: 80px;
@@ -178,7 +114,6 @@
   box-sizing: border-box;
 }
 .pagination-container .paginationjs .paginationjs-pages ul {
-  // float: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -187,9 +122,6 @@
   flex-wrap: wrap;
 }
 .pagination-container .paginationjs .paginationjs-pages li {
-  // float: none;
-  // border: none;
-  // border-radius: 0;
   list-style-type: none;
   margin: 0 2px;
 }

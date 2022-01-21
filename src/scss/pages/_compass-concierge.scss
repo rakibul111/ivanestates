@@ -1,0 +1,90 @@
+.compass_concierge.custom_intro{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/o3mm5xr7vzcntrnuscdh/lw1ixpb0nyfs6yre');
+}
+// ---------- intro end ----------------
+
+.compass {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.compass_content__row{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.compass_content__col {
+  flex: 50%;
+  z-index: 1;
+}
+.compass_content__col__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 79%;
+}
+.compass_content__col__img img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.compass_content__col.text {
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  padding-right: 0;
+}
+.reverse .compass_content__col.text {
+  padding-right: 120px;
+  padding-left: 0;
+}
+.compass_content__text_wrap{
+  flex: 1;
+}
+.compass_content__text_wrap p:first-child{
+  padding-top: 25px;
+}
+.compass_content__text_wrap p>img{
+  width: 220px;
+  padding-bottom: 0;
+}
+.compass_content__text1{
+  font-size: 24px;
+  line-height: 34px;
+  font-family: CompassSerif;
+}
+// -------------- agent area ----------------
+#agent{
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dbbtbldpp3wzmsu3s5no/gvivosflzblodixlu5w2'); background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover;
+}
+.compass_content__row.straight{
+  flex-direction: row;
+}
+#agent .compass_content__col__img img {
+  object-fit: contain;
+}
+#agent .compass_content__text1{
+  font-family: CompassSans;
+  padding-top: 0;
+}
+#agent .compass_content__text2{
+  font-size: 24px; 
+  font-family: CompassSerif;
+}
+#agent .link {
+  position: relative;
+  background: linear-gradient(currentColor, currentColor) 0 calc(100% + 1px) no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+  font-size: inherit;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#agent .link:hover {
+  background-size: 100% 1px;
+}
+#agent .btn {
+  margin-top: 19px;
+}

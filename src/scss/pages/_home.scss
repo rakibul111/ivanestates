@@ -1,0 +1,289 @@
+#homepage_intro{
+  position: relative;
+}
+#homepage_intro .video_wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#homepage_intro .video_component {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+#homepage_intro .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#homepage_intro video {
+  position: absolute;
+  z-index: -1000;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#homepage_intro .poster {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1000;
+  background: center center/cover;
+}
+#homepage_intro .overlay_component {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition-property: opacity;
+  transition-timing-function: linear;
+}
+#homepage_intro .homepage_opening {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#homepage_intro .homepage_opening__main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 136px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+#homepage_intro .homepage_opening__container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #eeeeee;
+  font-size: 16px;
+}
+#homepage_intro .homepage_opening__greeting {
+  max-width: 1000px;
+  margin-bottom: 21px;
+  position: relative;
+  font-weight: 500;
+}
+#homepage_intro .homepage_opening__heading {
+  max-width: 1000px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  line-height: 1.2;
+}
+#homepage_intro .homepage_opening__lead {
+  max-width: 434px;
+  margin-bottom: 34px;
+}
+#homepage_intro .homepage_opening__greeting::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid;
+}
+// ---------------- about ------------------------------
+#about .compass {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#about .compass_content__col__img img {
+  position: absolute;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.about_h2{
+  line-height: 1.17;
+}
+#about .compass_content__text_wrap p:first-child {
+  padding-top: 0;
+}
+#about .btn {
+  margin: 24px 12px 0 0;
+}
+// ------------------- slider testimonial 1 ----------------------
+#slider_testimonials {
+  background-image: linear-gradient(rgba(248, 248, 248, 1), rgba(248, 248, 248, 1)), url('https://res.cloudinary.com/luxuryp/images/slsnxnsfp1uesjhjmzmd/best-one');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.testimonials .container {
+  position: relative;
+}
+.testimonials__container {
+  max-width: 886px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  background-color: #FFFFFF;
+}
+.testimonials__header {
+  line-height: 1.33;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  width: fit-content;
+  font-weight: 500;
+  position: relative;
+}
+.testimonials__header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+.testimonials__item-content {
+  font-size: 26px;
+  line-height: 1.31;
+  letter-spacing: 1px;
+  margin: 35px 0;
+  white-space: pre-line;
+}
+.testimonials__item-author {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.33;
+}
+.testimonials__slider-arrows {
+  margin: 27px auto;
+  max-width: 320px;
+  position: relative;
+}
+.testimonials__slider-arrows .slick-arrow {
+  font-size: 20px;
+  color: #303339;
+  border: none;
+  background: transparent;
+  height: 20px;
+  line-height: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonials__slider-arrows .testimonials__prev {
+  left: 0;
+}
+.testimonials__slider-arrows .testimonials__next {
+  right: 0;
+}
+.dots-slider {
+  counter-reset: testimonials;
+  position: relative;
+  bottom: 0;
+  width: 210px;
+  margin: 27px auto;
+}
+.dots-slider__item {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #757575;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  display: inline-block;
+  width: 20px!important;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+}
+.dots-slider__item.slick-current {
+  color: #000000;
+  // color: #303339;
+  // transform: scale(1.01);
+}
+.dots-slider.stopTranslation .slick-track {
+  display: flex;
+  justify-content: center;
+}
+.dots-slider.stopTranslation .slick-track {
+  transform: translate3D(0,0,0)!important;
+}
+
+// ------------------- slider testimonial 2 ----------------------
+#slider_testimonials2 {
+  margin-top: 2px;
+  background-image: linear-gradient(rgba(248, 248, 248, 1), rgba(248, 248, 248, 1)), url('https://res.cloudinary.com/luxuryp/images/slsnxnsfp1uesjhjmzmd/best-one');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#slider_testimonials2 .testimonials__container {
+  max-width: 1086px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  background-color: #FFFFFF;
+}
+#slider_testimonials2 .testimonials__item div{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.testimonials__item img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 35px 0;
+}
+#slider_testimonials2 .testimonials__item .testimonials__item-content{
+  flex-basis: calc(100% - 100px);
+  margin-left: 30px;
+  // text-align: left;
+}
+// ------------------------- video content ----------------------------
+#video_testimonial1 .f-video__poster-bgr {
+  background-image: url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/os6ul0jxkz80r6v3cwou/26');
+}
+#video_testimonial2 .f-video__poster-bgr {
+  background-image: url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/pvwroivgebozu3ebjyt8/from-0-offers-in-3-months-to-11-offers-in-1-week-_-ivan-santacruz-0-2-screenshot');
+}
+#video_testimonial3 .f-video__poster-bgr {
+  background-image: url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/f4a979nyaeyqus0qjm77/ivan-santacruz-_-client-testimonial-0-2-screenshot');
+}
+.video_testimonial .socials{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.video_testimonial .socials li{
+  margin-bottom: 10px;
+  flex-basis: 64px;
+  padding-right: 10px;
+}
+.video_testimonial .socials .socials_link{
+  margin: 0;
+}
+

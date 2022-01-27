@@ -1,21 +1,13 @@
 @use "fonts";
-@use "variables";
-@use "utils";
-@use "reset";
-@use "animations";
 @use "base";
-
 @use "header";
 @use "footer";
-
-@use "utils/preloader";
-@use "utils/menu";
-@use "utils/secondary-slider";
+@use "preloader";
 
 @use "pages/home";
 @use "pages/sold";
-@use "pages/contact";
 @use "pages/compass-concierge";
 @use "pages/ashbourne-circle-san-ramon-ca";
 
+@use "contact-form";
 @use "responsive";

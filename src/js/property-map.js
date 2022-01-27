@@ -1,5 +1,5 @@
 
-// map styles
+// map property
 var mapStyles = [{
   "elementType": "geometry",
   "stylers": [{
@@ -117,18 +117,11 @@ var markerIcon = {
   scale: 1
 };
 
-// -------------------------
-let ashbourne = document.querySelector("#".concat("ashbourne-circle-san-ramon-ca", " .map-container"));
-
-if (ashbourne) {
-  var mapContainer = ashbourne;
-}
-// -----------------------------
-
 //  init map definition
 var initializeMap = function initializeMap(_ref) {
   var lat = _ref.lat,
-      lng = _ref.lng;
+      lng = _ref.lng,
+      mapContainer= _ref.mapContainer;
   var url = "https://www.google.com/maps/search/?api=1&query=".concat(lat, ",").concat(lng);
   var map = new google.maps.Map(mapContainer, {
     center: {
@@ -151,7 +144,12 @@ var initializeMap = function initializeMap(_ref) {
   });
 };
 
-if(mapContainer){
+// ------------ map container -------------
+let ashbourne = document.querySelector("#".concat("ashbourne-circle-san-ramon-ca", " .map-container"));
+let contact_us = document.querySelector(`#modal_contact_us .map-container`);
+// ----------------------------------------
+if(ashbourne){
+  mapContainer = ashbourne;
   // get lat, lng from div
   var lat = mapContainer.getAttribute('data-lat');
   var lng = mapContainer.getAttribute('data-lng');
@@ -159,6 +157,19 @@ if(mapContainer){
   initializeMap({
     lat: parseFloat(lat),
     lng: parseFloat(lng),
-    mapStyles: mapStyles
+    mapStyles: mapStyles,
+    mapContainer: mapContainer,
+  });
+}
+if(contact_us){
+  mapContainer = contact_us;
+  // get lat, lng from div
+  var lat = mapContainer.getAttribute('data-lat');
+  var lng = mapContainer.getAttribute('data-lng');
+  // call func
+  initializeMap({
+    lat: parseFloat(lat),
+    lng: parseFloat(lng),
+    mapContainer: mapContainer,
   });
 }

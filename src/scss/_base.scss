@@ -27,18 +27,18 @@ h1{font-size:60px;}
 h2{
   font-size:30px;
   line-height: 1.23;
-  margin-bottom: 1.66rem;
+  margin-bottom: 1.6rem;
 }
 h3{
   font-size:30px;
-  margin-bottom: 1.666rem;
+  margin-bottom: 1.6rem;
   line-height: 1.3;
 }
 h4{font-size:20px;}
 h5{font-size:18px;}
 h6{font-size:17px;}
 
-h1, h2, h3, h4 , .serif{
+h1, h2, h3, h4 , .serif, blockquote{
   font-weight: 400;
   font-family: 'CompassSerif', serif, "Times New Roman", Times, serif;
 }
@@ -135,6 +135,7 @@ form{
   text-transform: capitalize;
   line-height: 1;
   font-size: 16px;
+  letter-spacing: inherit;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
@@ -161,8 +162,36 @@ form{
   color: #000;
   background: #fff;
 }
-
-.label_group > input{
+.form_group{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.label_group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 15px;
+  border: solid 1px #a7a7a7;
+  color: #a7a7a7;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 400;
+}
+.label_group > label {
+  max-width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-shrink: 0;
+  font-size: 13px;
+  line-height: 13px;
+  vertical-align: middle;
+  overflow: hidden;
+  // white-space: nowrap;
+  transition: all 0.25s;
+}
+.label_group > input, .label_group > textarea{
   flex-grow: 1;
   height: 48px;
   width: inherit;
@@ -176,7 +205,7 @@ form{
   line-height: 18px;
   vertical-align: middle;
 }
-.label_group > input::placeholder{
+.label_group > input::placeholder, .label_group > textarea::placeholder{
   color: transparent;
 }
 .form_group .label_group.is-active {
@@ -185,7 +214,7 @@ form{
 .form_group .label_group.is-active > label {
   font-size: 10px;
 }
-.form_group .label_group.is-active > input {
+.form_group .label_group.is-active > input, .form_group .label_group.is-active > textarea {
   outline: none;
 }
 .properties .properties_grid a{
@@ -257,4 +286,128 @@ li *:last-child {
   justify-content: center;
   align-items: center;
   z-index: 2;
+}
+// -------------------------
+.spiral_bg{
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dbbtbldpp3wzmsu3s5no/gvivosflzblodixlu5w2');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+// ------------------ play video content ------------------------
+.f-video .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// video + text
+.f-video .container.reverse {
+  flex-direction: row-reverse;
+}
+.f-video__content {
+  width: calc(40% - 50px);
+}
+.f-video__poster {
+  width: 60%;
+}
+.f-video__title {
+  margin: 0 0 18px;
+}
+.f-video__content p {
+  max-width: 376px;
+  margin: 0 0 36px;
+}
+.f-video__poster-bgr {
+  padding: 27% 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.content_row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.content_cell {
+  min-height: 75px;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.btn-play {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.f-video .btn-play {
+  margin: auto;
+  transition: 0.3s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.btn-play > i, .btn-play > svg {
+  position: relative;
+  left: 2px;
+}
+.btn-play:focus, .btn-play:hover {
+  background-color: #000;
+  color: #fff;
+}
+// ----------------------------------------------------------------
+ol {
+  margin-left: 1.6rem;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.6rem;
+  list-style-position: outside;
+  list-style-image: none;
+}
+hr {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: calc(1.666rem - 1px);
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  height: 1px;
+}
+
+.vertical_paddings {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }

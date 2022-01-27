@@ -8,6 +8,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+.compass.basic_paddings {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .compass_content__row{
   display: flex;
   flex-direction: row-reverse;
@@ -87,4 +91,299 @@
 }
 #agent .btn {
   margin-top: 19px;
+}
+//  ---------- feature list -------------
+.feature.basic_paddings{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.feature_list {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.feature_list__wrapper{
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.feature .feature_list__wrapper{
+  margin: 3% 0 3% 0;
+  padding: 0 0 0 0;
+}
+.feature_content{
+  min-height: 75px;
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding: 1% 2% 1% 2%;
+}
+.feature_content:not(:last-child){
+  border-right: 1px solid #acacac;
+}
+.feature_content h3 {
+  padding: 0px;
+  text-align: center;
+}
+.feature_content p {
+  padding: 0px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: -10px;
+  font-family: CompassSans, 'serif';
+  line-height: 26px;
+}
+// ----------------------- success stories -----------------------------
+#success_stories{
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#success_stories__p1 {
+  padding: 0px;
+  font-size: 16px;
+  line-height: 26px;
+}
+#success_stories__d_p{
+  padding: 0;
+}
+#success_stories__days_wrap{
+    flex-basis: 100%;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+#success_stories__days_n, #success_stories__price {
+  padding: 0px;
+  font-size: 42px;
+  margin: 0 0 0 0;
+  justify-content: flex-start;
+  line-height: 0;
+  height: auto;
+}
+#success_stories__days_m, #success_stories__price_text {
+  padding: 0px;
+  font-size: medium;
+  margin: 0 0 0 0;
+  justify-content: flex-start;
+  line-height: normal;
+}
+#success_stories__price_wrap {
+  flex-basis: 70%;
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+#success_stories__footer {
+  padding: 0px;
+  font-size: 12px;
+  color: #acacac;
+  margin: 0 0 0 0;
+}
+#success_stories .f-video__poster-bgr{
+  background-image: url('https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/mma87pnmj7aczb2dwime/success-stories');
+}
+body > .modal{
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  display: block;
+}
+body > .modal .modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+body > .modal .lightbox-video{
+  width: 100%;
+  max-width: 177vh;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.embed-container embed, .embed-container iframe, .embed-container object {
+  width: 100%;
+  height: 100% ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+body > .modal .close{
+  display: block;
+  position: absolute;
+  right: 8vw;
+  top: 8vh;
+  width: 3.2em;
+  cursor: pointer;
+  color: #fff;
+  font-size: 75%;
+  border: none;
+  background: 0 0;
+  z-index: 2;
+}
+body > .modal .close img {
+  width: 100%;
+  height: 100%;
+}
+//------------ covered services --------------------
+#services{
+  background-color: rgba(249, 249, 249, 1);
+}
+#services .basic_paddings {
+  padding-bottom: 77px;
+}
+.services__wrapper, .qna__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+#services__outer_row, #services__inner_row {
+  padding: 0 0 0 0;
+}
+#services_header {
+  padding: 0 0 0 0;
+  font-size: medium;
+  line-height: 47px;
+}
+#services__cell1, #services__cell2 {
+  padding: 0px;
+  font-size: 16px;
+  margin: 0 0 -12px 0;
+}
+#services__cell3 {
+  padding: 0px;
+  font-size: 16px;
+}
+#services ul {
+  margin-left: 1.6rem;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style: initial;
+}
+#services ul li {
+  list-style: disc;
+}
+// ----------- company stats -----------------
+#company_stats {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/wsd4pohjt3gmxb6q2yba/collov-home-design-js8aqlw71ha-unsplash-1-3'); 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover;
+}
+#company_stats .basic_paddings {
+  padding-top: 16px;
+  padding-bottom: 80px;
+}
+.company_stats__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: -64px;
+  padding-top: 32px;
+  margin-top: 32px;
+}
+.company_stats__col {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  min-height: 1px;
+  max-width: 33.33%;
+  flex-basis: 33.33%;
+  flex-grow: 1;
+}
+.stat_card {
+  max-width: 364px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 64px;
+  text-align: center;
+}
+.stat_card__value {
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 1;
+  min-height: 30px;
+}
+.stat_card__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+//  ----------------- how it works ---------------
+#how_it_works .compass_content__col.text{
+  padding-top: 20px;
+}
+#how_it_works .text h2{
+  line-height: 1.17;
+}
+#how_it_works ol li{
+  padding-bottom: 10px;
+}
+// ---------- sale transform --------------
+#sale_transform.spiral_bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/gvivosflzblodixlu5w2/best-one);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#sale_transform .f-video{
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  color:rgba(255, 255, 255, 1);
+}
+#sale_transform .f-video__poster-bgr{
+  background-image: url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/jrqozfsnsh5gcfcxd2yw/compass-concierge-program-overview-0-1-screenshot-1-1_auto_x2_colored_toned-2');
+}
+// --------------------------- qna --------------------------------
+#qna{
+  font-size: 16px;
+}
+#qna .basic_paddings {
+  padding-bottom: 15px;
+}
+#qna__outer_row{
+  padding: 0 0 0 0;
+}
+#qna_header {
+  padding: 0 10px 0 10px;
+}
+#qna__inner_row {
+  margin: 20px 0 0 0;
+  padding: 10px 10px 0 10px;
+}
+#qna__inner_row .content_cell {
+  padding: 4% 4% 3% 4%;
+  margin: 0 10px 20px 10px;
+  border: 0.5px solid #d7d7d7;
+}
+#footer_hr {
+  background-color: rgba(255,255,255,0.3);
+  margin-top: 40px;
+}
+#qna__footer_cell {
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+#qna_desclaimer {
+  font-size: 12px;
+  color: #acacac;
+  font-family: CompassSerif;
 }

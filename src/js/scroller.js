@@ -5,7 +5,7 @@ $(function () {
 
   $(window).on('scroll', function () {
     var scrollTop = $(this).scrollTop();
-    console.log(scrollTop)
+    // console.log(scrollTop)
 
     if(scrollTop > 0){
       $('.header').addClass('scroll');
@@ -43,4 +43,60 @@ $(function () {
     }, 500);
   });
 
+});
+
+// ------------- company stat counter -------------
+var isCounterTriggered = false;
+
+document.addEventListener('scroll', function (e) {
+  var scrollPos = window.scrollY;
+
+  const triggerCounter = ()=>{
+
+    const counters = document.querySelectorAll('.counter');
+    let duration = 3000;
+
+    counters.forEach((counter) => {
+      let target = parseInt(counter.getAttribute('data-target'));
+      // let count = parseInt(counter.innerText);
+      let count = 0;
+
+      // let rem_target = target;
+      // let rem_duration = duration;
+      let avg = Math.round(duration/target);
+
+
+      // let time = 0;
+      // var intvl = setInterval(() => {
+      //   time++;
+      // }, 10);
+
+
+      const updateCount = (target, count)=>{
+
+        if(count < target){
+          counter.innerText = count++;
+          // let waiting_time = Math.round(rem_duration/rem_target);
+          // rem_duration = rem_duration - waiting_time;
+          // rem_target = rem_target - 1;
+
+          setTimeout(() => {
+            updateCount(target, count);
+          }, avg);
+        }
+        else{
+          // clearInterval(intvl);
+          // console.log(time)
+          counter.innerText = target;
+        }
+      }
+      updateCount(target, count);
+    });
+  }
+
+  if( scrollPos >= 2540 && isCounterTriggered == false ){
+    console.log('trigger')
+    isCounterTriggered = true;
+    triggerCounter();
+  }
 });

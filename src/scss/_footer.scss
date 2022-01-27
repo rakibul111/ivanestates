@@ -57,35 +57,6 @@ footer{
 .footer_details .subscribe{
   max-width: 300px;
 }
-.footer .form_group{
-  display: flex;
-  flex-wrap: nowrap;
-}
-.footer .label_group {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: 0 15px;
-  border: solid 1px #a7a7a7;
-  color: #a7a7a7;
-  font-size: 13px;
-  line-height: 1;
-  font-weight: 400;
-}
-.footer .label_group > label {
-  max-width: 50%;
-  padding-left: 5px;
-  padding-right: 5px;
-  flex-shrink: 0;
-  font-size: 13px;
-  line-height: 13px;
-  vertical-align: middle;
-  overflow: hidden;
-  // white-space: nowrap;
-  transition: all 0.25s;
-}
 .footer .label_group > input {
   height: 40px;
   padding-top: 11px;

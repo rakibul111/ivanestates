@@ -1,2 +1,0 @@
-// window onload
-// window resize

@@ -3,13 +3,12 @@ const concat = require("gulp-concat");
 const beautify = require("gulp-beautify");
 
 const sections = {
-  pages: ["./src/views/pages.html"],
   index: [
-    "./src/views/header/head.html", //
+    "./src/views/header/head.html",
     "./src/views/header/header.html",
     "./src/views/home.html",
-    "./src/views/footer/foot.html",
     "./src/views/footer/footer.html",
+    "./src/views/footer/foot.html",
   ],
   sold2: [
     "./src/views/header/head.html",
@@ -31,20 +30,6 @@ const sections = {
     "./src/views/ashbourne-circle-san-ramon-ca.html",
     "./src/views/footer/footer.html",
     "./src/views/footer/foot.html",
-  ],
-  contact: [
-    "./src/views/header/head.html", //
-    "./src/views/header/header.html",
-    "./src/views/contact.html",
-    "./src/views/footer/foot.html",
-    "./src/views/footer/footer.html",
-  ],
-  about: [
-    "./src/views/header/head.html", //
-    "./src/views/header/header.html",
-    "./src/views/about.html",
-    "./src/views/footer/foot.html",
-    "./src/views/footer/footer.html",
   ],
   "compass-concierge": [
     "./src/views/header/head.html", //
